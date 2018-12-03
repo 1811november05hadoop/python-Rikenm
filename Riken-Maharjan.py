@@ -294,16 +294,17 @@ param: none, from the keyboard
 return: nothing
 '''
 def evenAndOdds():
-	yourInput = input("Please insert a number: ")
+	yourInput = input("Please insert 10 numbers separated by commas: ")
+	#print yourInput
+	numbers = list(map(int, yourInput.split(",")))
+	for numb in numbers:
 	
-	if(yourInput % 2 == 0):
-		with open("even.txt", 'a') as f:
-			f.write(str(yourInput)+'\n')
-	elif(yourInput % 2 != 0 ):
-		with open("odd.txt", 'a') as f:
-			f.write(str(yourInput)+'\n')
-	else:
-		print("Please input the integer!!!!")
+		if(numb % 2 == 0):
+			with open("even.txt", 'a') as f:
+				f.write(str(numb)+'\n')
+		elif(numb % 2 != 0 ):
+			with open("odd.txt", 'a') as f:
+				f.write(str(numb)+'\n')
 
 
 if __name__ == "__main__":
