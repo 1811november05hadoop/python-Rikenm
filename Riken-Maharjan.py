@@ -225,7 +225,7 @@ def pangram(sentence):
 		dictionary[c] = 10
 	
 	for c in letters:
-		if(not dictionary.has_key(c)):
+		if(not c in dictionary):
 			return False
 	return True	
 
