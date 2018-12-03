@@ -38,9 +38,16 @@ Happy Scripting!
 use the main function for testing purposes and to show me results for all functions.
 '''
 def main():
-	print(reverse("Hello"))
-	print(acronym("Deoxyribo Nucleic ACid"))
-	print(whichTriangle(1,2,1))
+	print("Reverse of Hello: ",reverse("Hello"))
+	print("Acronym for Deoxyribo Nucleic Acid: ",acronym("Deoxyribo Nucleic ACid"))
+	print("Triangle (1,2,1) is: ",whichTriangle(1,2,1))
+	print("score for the word scrabble is: ",scrabble("scrabble"))
+	print("Is 9 an amstrong number: ",armstrong(9))
+	print("Prime Factors of 15: ",primeFactors(15))
+	print("Is The quick brown fox jumps over the lazy dog a pangram? ",pangram("The quick brown fox jumps over the lazy dog"))
+	print("Sort([1,2,5,4]): ",sort([1,2,5,4]))
+	print("rotate abcdefghijklmnopqrstuvwxyz with shift key 13 : ",rotate(13, "abcdefghijklmnopqrstuvwxyz"))
+	evenAndOdds()
 '''
 1. Reverse a String. Example: reverse("example"); -> "elpmaxe"
 
